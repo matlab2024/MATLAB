@@ -1,0 +1,66 @@
+import java.util.*;
+class A{
+     public int a ,b;
+    A(){
+        System.out.println("Welcome A");
+        
+    }
+    
+    void method1(int x, int y){
+        a =x;
+        b = y;}
+    void method2(){
+        System.out.println(a);
+         System.out.println(b);
+        
+    }    
+    
+}
+
+class B extends A{
+    int c;
+    B(){
+       System.out.println("Welcome B"); 
+    }
+    void method3(int x, int y,int z){
+        a =x;
+        b = y;
+        c =z;
+    }
+    void method4(){
+        System.out.println(a);
+         System.out.println(b);
+         System.out.println(c);
+        
+    }    
+    
+}
+
+
+
+public class inherit{
+    public static void main(String args[]){
+        A a = new A();
+        B b = new B();
+        Scanner sc = new Scanner(System.in);
+        int obj1= sc.nextInt();
+        int obj2= sc.nextInt();
+        a.method1(obj1,obj2);
+        a.method2();
+        
+         obj1= sc.nextInt();
+         obj2= sc.nextInt();
+          int obj3= sc.nextInt();
+         
+         b.method3(obj1,obj2,obj3);
+         b.method4();
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+}
